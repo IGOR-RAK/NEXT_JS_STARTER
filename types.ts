@@ -11,3 +11,11 @@ export type addressType = {
     email: string,
     address: addressType,
   };
+
+  export type postType = {
+    id:string,
+    title: string,
+    body: string,
+    userID: string
+  }
+  
