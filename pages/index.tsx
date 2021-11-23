@@ -11,6 +11,14 @@ export default function Home() {
       <div className="container">
       <div className="wrapper">
         <h1>Next JS Starter</h1>
+        <h3><a href="https://github.com/IGOR-RAK/NEXT_JS_STARTER" >Git Hub link</a></h3>
+        <h2>Stack:</h2>
+        <ul>
+          <li>
+            TypeScript
+          </li>
+          <li>SCSS</li>
+        </ul>
        
           
         {/* <p>public image</p>
