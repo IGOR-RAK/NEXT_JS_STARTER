@@ -1,0 +1,34 @@
+@import '__variables.scss';
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  
+    .links {
+      height: 100%;
+    }
+  
+    a {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 0.5rem;
+      text-transform: uppercase;
+      color: $color-primary;
+      text-decoration: none;
+      font-size: 1rem;
+  
+      &.active,
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .logo{
+        margin: 20px; 
+      cursor: pointer;
+    }
+  }
