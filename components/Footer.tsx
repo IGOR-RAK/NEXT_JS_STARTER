@@ -8,7 +8,7 @@ const Footer:FC=() => {
         <footer> 
             <div className='container'> 
                 
-                    <p>Powered by Igor Rak </p> 
+                    <h3>Powered by Igor Rak </h3> 
                 
             </div>     
         </footer>   

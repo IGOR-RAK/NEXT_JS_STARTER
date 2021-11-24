@@ -1,2 +1,19 @@
 @import '__variables.scss';
 
+.container{
+    max-width: $container-width;
+	margin: 0px auto;
+	display: flex;
+	padding: 0px 30px;
+	align-items: center;
+	justify-content: space-between;
+	min-height: $header-height;
+    // border: 2px solid chocolate;
+}
+
+.logo{
+    position: relative;
+	z-index: 5;
+    cursor: pointer;
+}
+

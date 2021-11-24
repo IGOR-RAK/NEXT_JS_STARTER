@@ -32,8 +32,10 @@ a {
 }
 
 .container {  
-  width: $container-width;
+  max-width: $container-width;
+  padding: 0px 30px;
   margin: 0 auto;
+  // border: 2px solid rosybrown;
  
 }
 
@@ -48,7 +50,8 @@ a {
 }
 
 main{  
-  flex: 1;  
+  flex: 1; 
+  padding: 70px 0 0 0; 
 }
 header, main, footer {
   flex-shrink: 0;
@@ -57,4 +60,38 @@ header, main, footer {
 footer,header{ 
   background: rgb(189,189,189);
   background: linear-gradient(180deg, rgba(189,189,189,1) 0%, rgba(197,197,207,1) 35%, rgb(226, 225, 225) 100%);
+}
+
+header{
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+@media (max-width: 767px) {
+  .menu__icon span{
+    color: rgb(211, 127, 32);
+  }
+}
+
+.menu{
+  position: absolute;
+  top:70px;
+  right:0;
+  height: 100vh;
+  width: 70%;
+  background-color: black;
+  z-index: 99;
+  transition: left 0.3s ease 0s;
+		overflow: auto;
+  
+}
+
+
+@media (max-width: 767px) {
+  h1 {
+  font-size: 1.5rem;
+}
 }

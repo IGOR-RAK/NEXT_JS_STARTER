@@ -1,6 +1,6 @@
 @import '__variables.scss';
 .nav {
-    width: 100%;
+    // width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,6 +10,15 @@
     .links {
       height: 100%;
     }
+
+    .item{
+      display: block;
+      width: 100px;
+      height: 15px;
+      color: white;
+    }
+
+    
   
     a {
       height: 100%;
@@ -21,15 +30,55 @@
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: 1000;
+      text-shadow: 1px 1px #555252;
   
-      &.active,
-      &:hover {
+      &.active
+       {
         background-color: rgba(0, 0, 0, 0.4);
+        text-shadow: none;
       }
+      &:hover{
+        text-decoration: underline;
+        text-shadow: none;
+      }
+
+
+
+      
     }
 
-    .logo{
-        margin: 20px; 
-      cursor: pointer;
-    }
+   
   }
+
+  .menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #fff;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
