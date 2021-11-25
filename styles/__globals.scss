@@ -1,4 +1,13 @@
 @import '__variables.scss';
+@import 'Header.scss';
+@import 'Navbar.scss';
+@import 'Home.scss';
+@import 'Footer.scss';
+
+
+
+
+
 html,
 body {
   width: 100%;
@@ -35,14 +44,13 @@ a {
   max-width: $container-width;
   padding: 0px 30px;
   margin: 0 auto;
-  // border: 2px solid rosybrown;
+ 
  
 }
 
 .wrapper {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  display: flex; 
   align-items: center;
   flex-direction: column;
   flex: 1;

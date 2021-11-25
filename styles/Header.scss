@@ -1,0 +1,25 @@
+@import '__variables.scss';
+
+
+
+.header{
+	position: absolute;
+	top:0;
+	left: 0;
+	text-align: center;
+	
+
+	.container{		
+		max-width: $container-width;
+		margin: 0px auto;
+		display: flex;
+		padding: 0px 30px;
+		align-items: center;
+		justify-content: space-between;
+		min-height: $header-height;	   
+	}
+}
+
+
+
+

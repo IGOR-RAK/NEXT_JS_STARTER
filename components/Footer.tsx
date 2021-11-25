@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from '../styles/Footer.module.scss'
+
 
 
 const Footer:FC=() => {

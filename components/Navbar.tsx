@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from "../styles/Navbar.module.scss";
-// import { useState } from 'react';
+
+
 
 
 const navigation = [
@@ -14,15 +14,15 @@ const navigation = [
 const Navbar = () => {
     const { pathname } = useRouter();
     
-    // const [menu,setMenu] = useState(false)
+    
 
   
     return (
-      <nav className={styles.nav}>
-         <div className={styles.links}>
+      <nav className="nav">
+         <div className="links">
             {navigation.map(({ id, title, path }) => (
               <Link key={id} href={path}>
-                <a className={pathname === path ? styles.active : null}>{title}</a>
+                <a className={pathname === path ? "active" : null}>{title}</a>
               </Link>
             ))}        
         </div>

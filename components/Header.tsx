@@ -2,13 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { FC } from "react";
 import Navbar from "./Navbar";
-import styles from "../styles/Header.module.scss";
+
 
 const Header:FC=() => {
     return (  
-    <header>
+    <header className="header">
      
-        <div className={styles.container}>                  
+        <div className="container">                  
 
             <Link href="/">
                 <a>

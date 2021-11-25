@@ -1,7 +1,7 @@
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+
 
 
 const set = ["TypeScript","SCSS","SSR","SSG","Axios","React-device-detect","SEO","Cloudinary","JSONplaceholder"]
@@ -19,23 +19,23 @@ export default function Home() {
       <div className="container">
        
       <div className="wrapper">
-        <div className={styles.dempher}></div>
+       
         <h1>Next JS Starter</h1>      
         
-        <div className={styles.stack_box}>
-        <h2>Stack:</h2>
-        <div className={styles.items}>         
-          {set.map(item=><p className={styles.item} key={item}>{item}</p>)}
+        <div className="stack_box">
+          <h2>Stack:</h2>
+          <div className="items">         
+            {set.map(item=><p className="item" key={item}>{item}</p>)}
+          </div>        
         </div>
-        </div>
-        <div className={styles.stack_box}>
-        <h3>
-          <a href={github_link} >GitHub link:</a>
-        </h3>
-        <p>
-          <a href={github_link} >https://github.com/IGOR-RAK/NEXT_JS_STARTER</a>
-        </p>
 
+        <div className="stack_box">
+          <h3>
+            <a href={github_link} >GitHub link:</a>
+          </h3>
+          <p>
+            <a href={github_link} >github.com/IGOR-RAK/NEXT_JS_STARTER</a>
+          </p>
         </div>
           
         {/* <p>public image</p>
