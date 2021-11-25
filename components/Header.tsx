@@ -16,7 +16,7 @@ const Header:FC=() => {
                 </a>
             </Link>
             
-        
+            <div className="burger-btn"><span></span></div>
             <Navbar/> 
 
         </div>

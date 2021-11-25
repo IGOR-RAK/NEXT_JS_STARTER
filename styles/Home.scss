@@ -17,6 +17,12 @@
    
 }
 
+.item{    
+  margin: 0;
+  justify-self: center;
+ 
+}
+
 @media (max-width: 767px) {
     .items {
     grid-template-columns: repeat(3, 1fr);
@@ -24,14 +30,14 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .items {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 20px;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 320px) {
     .items {
     grid-template-columns: 1fr;
     grid-auto-rows: 12px;
@@ -39,10 +45,6 @@
   }
 }
 
-.item{    
-    margin: 0;
-    justify-self: center;
-   
-}
+
 
 
