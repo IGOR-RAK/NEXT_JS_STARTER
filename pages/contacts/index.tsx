@@ -12,7 +12,7 @@ type contactsTypeProps = {
 export const getStaticProps:GetStaticProps = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await response.json();
-    // const data = null
+    
   
     if(!data){
       return {
@@ -31,7 +31,7 @@ const Contacts:FC<contactsTypeProps>=({contacts}) => {
         <div className="container">
         <div className="wrapper">
             <h1>Contacts list:</h1>
-            {/* <Heading tag={'h1'}text={'Contacts list:'}/> */}
+          
             <ul>
             {contacts && contacts.map(({ id, name }) => (
           <li key={id}>

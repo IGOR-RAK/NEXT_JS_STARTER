@@ -27,7 +27,9 @@ const Posts:FC<postInfoProps>=({posts}) => {
         <Head>
             <title>Posts</title>
         </Head>
+
         <div className="wrapper">
+          <div className="container">
             <h1>Post list</h1>
             <ul>
             {posts && posts.map(({ id, title }) => (
@@ -38,7 +40,7 @@ const Posts:FC<postInfoProps>=({posts}) => {
             </ul>
 
         </div>
-        
+        </div>
     </main>);
 }
 
