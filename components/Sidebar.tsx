@@ -11,7 +11,7 @@ type sidebarProps = {
   }
 
 
-const Sidebar:FC<sidebarProps> = ({items,active,setActive}) => {
+const Sidebar = ({items,active,setActive}) => {
     return ( 
     <div className={active ? "sidebar active" : "sidebar"} onClick={()=>{setActive(!active)}}> 
         <div className="blur"></div>

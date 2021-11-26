@@ -14,9 +14,9 @@ import {sidebarType} from "../types"
 //   ];
  
 
-const Header:FC=() => {
+const Header=() => {
     const [active,setActive] = useState<boolean>(false)
-    const items:sidebarType[]  = [
+    const items = [
         { id: 1, title: 'Home', path: '/' },
         { id: 2, title: 'SSG', path: '/posts' },
          { id: 3, title: 'SSR', path: '/contacts' },

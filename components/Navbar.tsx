@@ -10,7 +10,7 @@ type navbarProps = {
 
 
 
-const Navbar:FC<navbarProps> = ({items}) => {
+const Navbar = ({items}) => {
     const { pathname } = useRouter();
     
     
