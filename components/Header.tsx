@@ -4,16 +4,24 @@ import { FC } from "react";
 import Navbar from "./Navbar";
 import { useState } from 'react';
 import Sidebar from "./Sidebar";
+import {sidebarType} from "../types"
 
+// const items:sidebarType[] = [
+//     { id: 1, title: 'Home', path: '/' },
+//     { id: 2, title: 'SSG', path: '/posts' },
+//      { id: 3, title: 'SSR', path: '/contacts' },
+//     //  { id: 4, title: 'Images', path: '/images' },
+//   ];
+ 
 
-const Header=() => {
-    const [active,setActive] = useState(false)
-    const items = [
-      { id: 1, title: 'Home', path: '/' },
-      { id: 2, title: 'SSG', path: '/posts' },
-       { id: 3, title: 'SSR', path: '/contacts' },
-      //  { id: 4, title: 'Images', path: '/images' },
-    ];
+const Header:FC=() => {
+    const [active,setActive] = useState<boolean>(false)
+    const items:sidebarType[]  = [
+        { id: 1, title: 'Home', path: '/' },
+        { id: 2, title: 'SSG', path: '/posts' },
+         { id: 3, title: 'SSR', path: '/contacts' },
+         { id: 4, title: 'Images', path: '/images' },
+      ];
  
     return (  
     <header className="header">
@@ -31,7 +39,7 @@ const Header=() => {
              onClick={()=>{setActive(!active)}}><span></span></div>
            
             <Sidebar active={active} setActive={setActive}  items={items}/>            
-            <Navbar /> 
+            <Navbar items={items} /> 
 
         </div>
        

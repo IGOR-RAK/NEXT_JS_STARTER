@@ -38,16 +38,7 @@ export default function Home() {
           </p>
         </div>
           
-        {/* <p>public image</p>
-        <Image src={kreski} width={1416} height={672} alt="preview"  placeholder="blur" />  
-        <p>cloudinary image</p>
-        <Image
-          src="https://res.cloudinary.com/du9w3xgvx/image/upload/v1637601210/sample.jpg"
-          alt="Galaxy"
-          width={864}
-          height={576}
-          // placeholder="blur" 
-        /> */}
+      
        
       </div>
       </div>

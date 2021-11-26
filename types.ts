@@ -18,4 +18,11 @@ export type addressType = {
     body: string,
     userID: string
   }
+
+  export type sidebarType = {
+    id:number,
+    title: string,
+    path: string,
+    
+  }
   
